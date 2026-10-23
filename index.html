@@ -4,332 +4,80 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#020b05">
-
 <title>VINTX SURE SHOT</title>
-<meta name="description" content="Visit the VINTX SURE SHOT Telegram community for trading-related updates and market discussions.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--green:#16f765;--light:#a4ffb9;--dark:#020b05}
 
-:root {
-  --green: #16f765;
-  --green-light: #9bffb7;
-  --dark: #020b05;
-  --panel: #08170c;
-  --white: #ffffff;
-  --muted: #a6b8aa;
+body{
+ min-height:100vh;display:flex;align-items:center;
+ justify-content:center;padding:16px;
+ font-family:Poppins,sans-serif;color:#fff;
+ background:radial-gradient(ellipse at 50% 15%,#075222,transparent 55%),#020b05
 }
-
-html {
-  min-height: 100%;
+.card{
+ width:100%;max-width:430px;padding:25px 22px;
+ text-align:center;border:1px solid #16f76570;
+ border-radius:25px;background:linear-gradient(150deg,#102516,#040b06);
+ box-shadow:0 25px 70px #000b,0 0 30px #16f76515;
+ animation:appear .6s ease
 }
-
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px;
-  font-family: 'Poppins', sans-serif;
-  color: var(--white);
-  background:
-    radial-gradient(ellipse at 50% 15%, #06421c 0%, transparent 48%),
-    radial-gradient(ellipse at 100% 100%, #063016 0%, transparent 45%),
-    var(--dark);
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.top{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--green);margin-bottom:15px}
+.badge{padding:9px;margin-bottom:20px;color:var(--light);border:1px solid #16f76545;border-radius:12px;font-size:10px;font-weight:700}
+.logo{
+ width:225px;height:225px;margin:0 auto 20px;padding:3px;
+ border-radius:22px;background:linear-gradient(135deg,#16f765,#d2ffdd,#087b35);
+ box-shadow:0 0 30px #16f76530
 }
-
-.card {
-  width: 100%;
-  max-width: 440px;
-  padding: 26px 22px;
-  text-align: center;
-  border: 1px solid #16f76570;
-  border-radius: 25px;
-  background: linear-gradient(150deg, #0d2112, #040b06 75%);
-  box-shadow: 0 25px 70px #000b, 0 0 30px #16f76513;
-  animation: appear .6s ease both;
+.logo img{width:100%;height:100%;display:block;object-fit:contain;border-radius:19px;background:#000}
+h1{font-size:29px;line-height:1.3;font-weight:800;margin-bottom:10px}
+h1 span{color:var(--green)}
+.subtitle{font-size:11px;line-height:1.9;color:#b4c5b7;margin:12px 0 20px}
+.status{color:var(--light);font-size:10px;font-weight:700;letter-spacing:1px;margin-bottom:20px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:7px;box-shadow:0 0 10px var(--green)}
+.features{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:20px}
+.feature{padding:8px 10px;border:1px solid #16f76540;border-radius:9px;color:var(--light);font-size:9px;font-weight:700}
+.timerbox{padding:14px;margin-bottom:18px;border:1px solid #16f76540;border-radius:15px;background:#16f76508}
+.timerlabel{font-size:11px;color:#b4c5b7}
+#timer{font-size:42px;font-weight:800;color:var(--green)}
+.progress{height:5px;border-radius:10px;background:#ffffff20;overflow:hidden}
+#bar{height:100%;width:100%;background:var(--green);transition:width 1s linear}
+.join{
+ display:flex;align-items:center;justify-content:center;gap:9px;
+ width:100%;padding:15px 12px;border-radius:50px;
+ color:#001b09;background:linear-gradient(120deg,#16f765,#a4ffb9);
+ text-decoration:none;font-size:13px;font-weight:800;
+ box-shadow:0 7px 25px #16f76525
 }
-
-@keyframes appear {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.top-label {
-  color: var(--green);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  margin-bottom: 16px;
-}
-
-.badge {
-  padding: 9px 10px;
-  margin-bottom: 22px;
-  color: var(--green-light);
-  background: #16f76510;
-  border: 1px solid #16f76545;
-  border-radius: 12px;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.logo-wrap {
-  width: 225px;
-  height: 225px;
-  margin: 0 auto 23px;
-  padding: 3px;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #16f765, #c8ffd6, #087b35, #16f765);
-  box-shadow: 0 0 32px #16f76525;
-}
-
-.logo-wrap img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border: 3px solid #061008;
-  border-radius: 19px;
-  background: #000;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.3;
-  font-weight: 800;
-  overflow-wrap: anywhere;
-  margin-bottom: 9px;
-  text-shadow: 0 0 20px #16f76520;
-}
-
-h1 span {
-  color: var(--green);
-}
-
-.subtitle {
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.9;
-  margin: 12px 0 20px;
-}
-
-.status {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 20px;
-  color: var(--green-light);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: 0 0 10px #16f765;
-}
-
-.chart {
-  height: 44px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 7px;
-  margin-bottom: 22px;
-}
-
-.candle {
-  width: 10px;
-  border-radius: 3px 3px 1px 1px;
-  background: linear-gradient(to top, #078c39, #56ff91);
-  animation: candlePulse 1.5s ease-in-out infinite;
-}
-
-.candle:nth-child(1) { height: 18px; }
-.candle:nth-child(2) { height: 29px; animation-delay: .1s; }
-.candle:nth-child(3) { height: 23px; animation-delay: .2s; }
-.candle:nth-child(4) { height: 39px; animation-delay: .3s; }
-.candle:nth-child(5) { height: 30px; animation-delay: .4s; }
-.candle:nth-child(6) { height: 43px; animation-delay: .5s; }
-.candle:nth-child(7) { height: 35px; animation-delay: .6s; }
-
-@keyframes candlePulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: .55; }
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 22px;
-}
-
-.feature {
-  padding: 8px 10px;
-  color: var(--green-light);
-  background: #16f7650d;
-  border: 1px solid #16f76540;
-  border-radius: 9px;
-  font-size: 9px;
-  font-weight: 700;
-}
-
-.timer-box {
-  padding: 15px 12px;
-  margin-bottom: 18px;
-  border: 1px solid #16f76540;
-  border-radius: 15px;
-  background: #16f76508;
-}
-
-.timer-label {
-  color: var(--muted);
-  font-size: 11px;
-  margin-bottom: 5px;
-}
-
-.timer {
-  color: var(--green);
-  font-size: 43px;
-  line-height: 1.3;
-  font-weight: 800;
-  font-variant-numeric: tabular-nums;
-}
-
-.progress {
-  height: 5px;
-  margin-top: 12px;
-  overflow: hidden;
-  border-radius: 10px;
-  background: #ffffff18;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #078c39, #16f765);
-  transition: width 1s linear;
-}
-
-.join-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  min-height: 55px;
-  padding: 14px 12px;
-  color: #001b09;
-  background: linear-gradient(120deg, #16f765, #a4ffb9);
-  border: 0;
-  border-radius: 50px;
-  text-decoration: none;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 800;
-  box-shadow: 0 7px 25px #16f76525;
-  transition: transform .2s, box-shadow .2s;
-}
-
-.join-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 9px 30px #16f76545;
-}
-
-.join-button:focus-visible {
-  outline: 3px solid #fff;
-  outline-offset: 4px;
-}
-
-.telegram-icon {
-  width: 22px;
-  height: 22px;
-  flex-shrink: 0;
-}
-
-.note {
-  margin-top: 12px;
-  color: #8da292;
-  font-size: 10px;
-  line-height: 1.8;
-}
-
-.disclaimer {
-  padding-top: 15px;
-  margin-top: 18px;
-  border-top: 1px solid #16f76525;
-  color: #859188;
-  font-size: 9px;
-  line-height: 1.8;
-}
-
-@media (max-width: 360px) {
-  body { padding: 10px; }
-  .card { padding: 22px 15px; }
-  .logo-wrap { width: 190px; height: 190px; }
-  h1 { font-size: 25px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-}
+.join:hover{filter:brightness(1.08)}
+.note{font-size:10px;color:#a6b8aa;line-height:1.8;margin-top:12px}
+.disclaimer{border-top:1px solid #16f76525;margin-top:18px;padding-top:14px;font-size:9px;line-height:1.8;color:#8d9d91}
+@media(max-width:360px){.logo{width:190px;height:190px}h1{font-size:25px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 
 <body>
-
 <main class="card">
+  <div class="top">TRADING COMMUNITY</div>
+  <div class="badge">★ VINTX SURE SHOT · TELEGRAM CHANNEL</div>
 
-  <div class="top-label">TRADING COMMUNITY</div>
-
-  <div class="badge">
-    ★ VINTX SURE SHOT · TELEGRAM CHANNEL
-  </div>
-
-  <div class="logo-wrap">
-    <img src="logo.png" alt="VINTEX logo"
-         width="225" height="225">
+  <!-- Keep logo.png in the same folder as index.html -->
+  <div class="logo">
+    <img src="logo.png" alt="VINTEX logo" width="225" height="225">
   </div>
 
   <h1>VINTX <span>SURE SHOT</span></h1>
-
   <p class="subtitle">
     Welcome to our Telegram community.<br>
     Explore trading-related updates and market discussions.
   </p>
 
-  <div class="status">
-    <span class="dot"></span>
-    TELEGRAM COMMUNITY
-  </div>
-
-  <div class="chart" aria-hidden="true">
-    <div class="candle"></div>
-    <div class="candle"></div>
-    <div class="candle"></div>
-    <div class="candle"></div>
-    <div class="candle"></div>
-    <div class="candle"></div>
-    <div class="candle"></div>
-  </div>
+  <div class="status"><span class="dot"></span>TELEGRAM COMMUNITY</div>
 
   <div class="features">
     <span class="feature">TRADING UPDATES</span>
@@ -337,30 +85,18 @@ h1 span {
     <span class="feature">COMMUNITY</span>
   </div>
 
-  <div class="timer-box">
-    <div class="timer-label" id="timerLabel">
-      TELEGRAM OPENS IN
-    </div>
-
-    <div class="timer" id="timer" aria-live="polite">10</div>
-
-    <div class="progress">
-      <div class="progress-bar" id="progressBar"></div>
-    </div>
+  <div class="timerbox">
+    <div class="timerlabel" id="timerLabel">TELEGRAM OPENS IN</div>
+    <div id="timer" aria-live="polite">10</div>
+    <div class="progress"><div id="bar"></div></div>
   </div>
 
-  <a
-    class="join-button"
-    id="joinButton"
-    href="https://t.me/+UlBoWXS1BhxjYzQ1"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <svg class="telegram-icon"
-         viewBox="0 0 24 24"
-         fill="currentColor"
-         aria-hidden="true">
-      <path d="M21.8 3.2c-.3-.3-.8-.4-1.3-.2L2.6 9.9c-.8.3-.8 1.5.1 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.4l2.6-2.7 4.8 3.5c.6.4 1.4.1 1.5-.7l2.8-14.6c.1-.5 0-.9-.5-1.2ZM9 12.8l8.9-5.6-7.3 7.1-.4 3.1L9 12.8Z"/>
+  <a class="join" id="joinButton"
+     href="https://t.me/+UlBoWXS1BhxjYzQ1"
+     target="_blank" rel="noopener noreferrer">
+    <svg width="21" height="21" viewBox="0 0 24 24"
+         fill="currentColor" aria-hidden="true">
+      <path d="M21.8 3.2c-.3-.3-.8-.4-1.3-.2L2.6 9.9c-.8.3-.8 1.5.1 1.8l4.6 1.5 1.7 5.3c.2.7 1.1.9 1.6.4l2.6-2.7 4.8 3.5c.6.4 1.4.1 1.5-.7l2.8-14.6c.1-.5 0-.9-.5-1.2Z"/>
     </svg>
     JOIN TELEGRAM NOW
   </a>
@@ -370,53 +106,41 @@ h1 span {
   </p>
 
   <p class="disclaimer">
-    Trading involves financial risk. Make independent,
-    informed decisions. No profits or returns are guaranteed.
+    Trading involves financial risk. Make independent, informed decisions.
+    No profits or returns are guaranteed.
   </p>
-
 </main>
 
 <script>
-(function () {
-  "use strict";
-
+(function(){
   const telegramURL = "https://t.me/+UlBoWXS1BhxjYzQ1";
   const timer = document.getElementById("timer");
   const label = document.getElementById("timerLabel");
-  const bar = document.getElementById("progressBar");
+  const bar = document.getElementById("bar");
   const button = document.getElementById("joinButton");
 
   let seconds = 10;
-  let redirected = false;
+  let manuallyClicked = false;
 
-  function openTelegram() {
-    if (redirected) return;
+  button.addEventListener("click", function(){
+    manuallyClicked = true;
+    clearInterval(countdown);
+  });
 
-    redirected = true;
-    label.textContent = "OPENING TELEGRAM...";
-    timer.textContent = "0";
-    bar.style.width = "0%";
-
-    window.location.href = telegramURL;
-  }
-
-  const countdown = window.setInterval(function () {
-    seconds -= 1;
-    timer.textContent = String(seconds);
+  const countdown = setInterval(function(){
+    seconds--;
+    timer.textContent = seconds;
     bar.style.width = (seconds * 10) + "%";
 
-    if (seconds <= 0) {
-      window.clearInterval(countdown);
-      openTelegram();
+    if(seconds <= 0){
+      clearInterval(countdown);
+      if(!manuallyClicked){
+        label.textContent = "OPENING TELEGRAM...";
+        window.location.href = telegramURL;
+      }
     }
   }, 1000);
-
-  button.addEventListener("click", function () {
-    window.clearInterval(countdown);
-    redirected = true;
-  });
 })();
 </script>
-
 </body>
 </html>
